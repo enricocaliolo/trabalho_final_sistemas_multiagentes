@@ -1,0 +1,19 @@
+MAS trabalho_final {
+
+	infrastructure: Centralised
+
+	environment: env(glicemy_tracker)
+
+	agents:
+		glicemy_tracker glicemy_tracker;
+		insulin_applicator insulin_applicator;
+		glucose_applicator glucose_applicator;
+		
+		cerberus cerberus;
+		
+		agent_reduce_glicemy agent_reduce_glicemy;
+		agent_carbohydrate_intake agent_carbohydrate_intake;
+
+	aslSourcePath:
+		"src/asl";
+}

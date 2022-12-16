@@ -1,4 +1,4 @@
-// Agent cerberus in project testando_ambiente
+// Agent cerberus in project trabalho_final
 
 /* Initial beliefs and rules */
 
@@ -6,8 +6,8 @@
 
 /* Plans */
 
-+glicemia(G)[source(AG)]: G >= 180 <-
-	.send(aplicador_insulina, tell, aplicarInsulina(G)).
++glicemy(G)[source(AG)]: G >= 180 <-
+	.send(insulin_applicator, tell, applyInsulin(G)).
 	
-+glicemia(G)[source(AG)]: G <= 70 <-
-	.send(aplicador_glicose, tell, aplicarGlicose(G)).
++glicemy(G)[source(AG)]: G <= 70 <-
+	.send(glucose_applicator, tell, applyGlucose(G)).
